@@ -5,7 +5,7 @@ pipeline {
 
         stage('Validar Python') {
             steps {
-                bat 'python --version'
+                bat 'py --version'
             }
         }
 
@@ -18,7 +18,7 @@ pipeline {
 
         stage('Ejecutar procesamiento') {
             steps {
-                bat 'python scripts/procesamiento.py'
+                bat 'py scripts/procesamiento.py'
             }
         }
 
